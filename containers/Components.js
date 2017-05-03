@@ -36,7 +36,7 @@ class Components extends Component {
             <Input icon="fa fa-user" placeholder="email" />
           </Comp>
           <Comp title="Drop Down" style={{textAlign:'left'}}>
-            <DropDownButton items={[
+            <DropDownButton onItemSelect={ (s) => alert('dsadsa') } items={[
               {id:0, name:'item 1'},
               {id:1, name:'item 2'},
               {id:2, name:'item 3'},

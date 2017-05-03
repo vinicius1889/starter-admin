@@ -32,7 +32,7 @@ class Buttons extends Component {
         <Row>
           <Col size="6" className="pin">
             <Panel title="Buttons">
-              <Button label="Default Button" size="btn-sm" color="btn-default" classes={'m-r-sm m-b-sm'} />
+              <Button label="teste" size="btn-sm" color="btn-default" classes={'m-r-sm m-b-sm'} />
               <Button label="Primary Button" size="btn-sm" color="btn-primary" classes={'m-r-sm m-b-sm'}  />
               <Button label="Success Button" size="btn-sm" color="btn-success" classes={'m-r-sm m-b-sm'}  />
               <Button label="Info Button" size="btn-sm" color="btn-info" classes={'m-r-sm  m-b-sm'}  />
