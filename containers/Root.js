@@ -26,6 +26,8 @@ import Profile from './Profile';
 import Dashboard from './Dashboard';
 import Analytics from './Analytics';
 
+import FormExemplo  from './FormExemplo';
+
 // UI
 import Bootstrap from './Bootstrap';
 import Buttons from './Buttons';
@@ -85,6 +87,8 @@ export default class Root extends Component {
           <Route path='/' component={App}>
             <IndexRoute component={Dashboard} pageName="Dashboard" pageDescription="Admin Application Dashboard." />
             
+            <Route path='/form/exemplo' component={FormExemplo} pageName="Form Exemplo" pageDescription="Form examplo" />
+
             <Route path='/analytics' component={Analytics} pageName="Analytics" pageDescription="Simple analytics example." />
 
             <Route path='/account' component={Account} pageName="Account" pageDescription="Manage your account." />

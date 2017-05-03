@@ -59,9 +59,12 @@ export default class Menu extends Component {
                     <nav className={navClasses}>
                       <ul className="nav">
                         <MenuItem link={'/'}  icon='fa-home' color='bg-danger' linkText='Dashboard' currentPage={this.props.currentPage}>
-                        </MenuItem>                                    
-                        <MenuItem link={'/'}  icon='fa-desktop' color='bg-success' linkText='UI' currentPage={this.props.currentPage}>
-                            <SubMenuItem link={'/ui/general'} linkText={'General'} />
+                        </MenuItem>
+
+                          <MenuItem link={'/form/exemplo'} linkText={'Inicio'}   icon='fa-sitemap' color='bg-success'  currentPage={this.props.currentPage}>
+                          </MenuItem>
+                          <MenuItem link={'/'}  icon='fa-desktop' color='bg-success' linkText='UI' currentPage={this.props.currentPage}>
+                            <SubMenuItem link={'/ui/general'} linkText={'General'}/>
                             <SubMenuItem link={'/ui/buttons'} linkText={'Buttons'} />
                             <SubMenuItem link={'/ui/fontawesome'} linkText={'Font Awesome'} />
                             <SubMenuItem link={'/ui/materialicons'} linkText={'Material Design Icons'} />
