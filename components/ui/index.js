@@ -12,11 +12,7 @@ import React from 'react';
 
 const UI = {};
 
-UI.Button = ({icon, label, size, color, classes, onClick, style, tooltip, rounded = false}) => {
-  const button_icon = icon ? <i className={`${label ? 'm-r-xs' : ''} fa ${icon}`} /> : null; 
-  const button_label = label ? <span className="text">{label}</span> : null;
-  return <button style={style} data-balloon={tooltip} onClick={onClick} className={`btn ${color} ${size} ${classes} ${rounded ? 'btn-rounded' : ''}`}>{button_icon}{button_label}</button>
-}
+
 
 UI.Fa = ({icon, size, color, classes}) => (
   <i style={size ? {fontSize:size} : {}} className={`fa fa-2x fa-${icon} ${classes}`}></i>
@@ -74,11 +70,7 @@ UI.IStack = ({icon, size, color, bg, width, height, classes}) => {
   )
 }
 
-UI.Label = ({color, classes, title}) => (
-  <span className={`label ${color} ${classes}`}>
-    {title}
-  </span>
-)
+
 
 UI.SearchBox = ({val, onChange}) => (
    <form className="search-content" action="#" method="post">
@@ -89,21 +81,6 @@ UI.SearchBox = ({val, onChange}) => (
     </form>
 );
 
-UI.Panel = ({title, children, scrollHeight, classes, height}) => {
-  
-  let baseStyle = {};
-  if (height) {
-    baseStyle = {height:height, overflow:'hidden'};
-  }
-  return (
-  	<section style={scrollHeight ? Object.assign({},baseStyle,{paddingBottom:30}) : baseStyle} className="panel panel-default m-b-lg">
-      {title ? <header className="panel-heading text-uc">{title}{title ? <hr /> : null}</header> : null}
-      <section style={scrollHeight ? {height:scrollHeight, overflowY:'scroll'} : {}} className={`panel-body ${classes}`}>
-  		{children}
-      </section>
-  	</section>
-  )
-}
 
 
 UI.PageHead = ({title, subtitle, children, classes}) => (
@@ -146,13 +123,6 @@ UI.Pager = ({currentPage, itemsPerPage, totalItems, onNext, onPrevious, onPage, 
   )
 };
 
-UI.Alert = ({color, persistant, title, onClose, classes, children}) => (
-    <div className={`alert ${color}`}>
-      {!persistant ? <button type="button" onClick={onClose}  className="close" data-dismiss="alert">×</button> : null}
-      {title ? <h4>{title}</h4> : null}
-      {children}
-    </div>
-);  
 
  
 export default UI;

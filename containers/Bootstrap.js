@@ -12,15 +12,18 @@ import React, { Component } from 'react';
 import { Link, browserHistory } from 'react-router';
 
 import moment from 'moment';
-import ModalFactory from '../components/modals/factory';
 
-import {Alert, Button, Label, Panel} from '../components/ui/';
-import {Row, Col, Page} from '../components/ui/Layout';
-
-import ProgressBar from '../components/charts/ProgressBar';
 import Slider from 'rc-slider';
-
+import Row from '../components/icarros/row/Row';
+import Page from '../components/icarros/page/Page';
+import Col from '../components/icarros/col/Col';
+import Alert from '../components/icarros/alert/Alert';
+import Button from '../components/icarros/button/Button';
+import Label from '../components/icarros/label/label';
+import Panel from '../components/icarros/panel/Panel';
+import ProgressBar from '../components/icarros/progress_bar/ProgressBar';
 import DatePicker from 'react-datepicker';
+
 var shallowCompare = require('react-addons-shallow-compare');
 
 const tips = {

@@ -15,8 +15,10 @@ import { Link, browserHistory } from 'react-router';
 import moment from 'moment';
 import ModalFactory from '../components/modals/factory';
 
-import {Panel, Button} from '../components/ui/';
+import {Panel} from '../components/ui/';
 import {Row, Col, Page} from '../components/ui/Layout';
+
+import Button from '../components/icarros/button/Button'
 
 let Factory = ModalFactory.modalFromFactory;
 var shallowCompare = require('react-addons-shallow-compare');
