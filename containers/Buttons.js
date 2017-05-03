@@ -15,8 +15,10 @@ import { Link, browserHistory } from 'react-router';
 import moment from 'moment';
 import ModalFactory from '../components/modals/factory';
 
-import {Panel} from '../components/ui/';
-import {Row, Col, Page} from '../components/ui/Layout';
+import Panel from '../components/icarros/panel/Panel';
+import  Row  from '../components/icarros/row/Row';
+import  Col  from '../components/icarros/col/Col';
+import  Page  from '../components/icarros/page/Page';
 
 import Button from '../components/icarros/button/Button'
 

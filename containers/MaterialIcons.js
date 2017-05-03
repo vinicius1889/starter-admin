@@ -14,10 +14,13 @@ import { Link, browserHistory } from 'react-router';
 import moment from 'moment';
 import ModalFactory from '../components/modals/factory';
 
-import {materialdesign} from '../components/ui/faicons';
+import {materialdesign} from '../components/icarros/i/IconsList';
 
-import {Row, Col, Page} from '../components/ui/Layout';
-import {I, Panel} from '../components/ui/';
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
+import I from '../components/icarros/i/I';
+import Panel from '../components/icarros/panel/Panel';
 
 let Factory = ModalFactory.modalFromFactory;
 var shallowCompare = require('react-addons-shallow-compare');

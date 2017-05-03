@@ -12,10 +12,14 @@ import React, { Component } from 'react';
 import { Link, browserHistory } from 'react-router';
 
 import moment from 'moment';
-import ProgressBar from '../components/charts/ProgressBar';
+import ProgressBar from '../components/icarros/progress_bar/ProgressBar';
 
-import {Panel, Table} from '../components/ui/';
-import {Row, Col, Page} from '../components/ui/Layout';
+import Panel from '../components/icarros/panel/Panel';
+import Table from '../components/icarros/table/Table';
+
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
 
 const tableData = [
   {Device : 'Heating - House', consumed: '45 kW', potential: '30 kW'},

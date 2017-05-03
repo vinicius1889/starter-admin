@@ -12,21 +12,19 @@ import React, { Component } from 'react';
 import { Link, browserHistory } from 'react-router';
 
 import moment from 'moment';
-
-import {Button} from '../components/ui/';
-
+import Button from '../components/icarros/button/Button';
 import ModalFactory from '../components/modals/factory';
 import FullscreenModalFactory from '../components/modals/fullscreenfactory';
-
 import ContentModal from '../components/modals/ContentModal';
 import Confirm from '../components/modals/Confirm';
-
-import Logout from '../components/modals/Logout'; 
-
-import {Row, Col, Page} from '../components/ui/Layout';
+import Logout from '../components/modals/Logout';
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
 
 let Factory = ModalFactory.modalFromFactory;
 let FullscreenFactory = FullscreenModalFactory.modalFromFactory;
+
 var shallowCompare = require('react-addons-shallow-compare');
 
 /* Modals */

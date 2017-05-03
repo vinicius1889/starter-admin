@@ -14,43 +14,10 @@ const UI = {};
 
 
 
-UI.Fa = ({icon, size, color, classes}) => (
-  <i style={size ? {fontSize:size} : {}} className={`fa fa-2x fa-${icon} ${classes}`}></i>
-)
 
 
-UI.I = ({icon, size, color, classes, style}) => {
-  let _classes = `material-icons ${classes}`;
-  let _style = Object.assign({},
-              { fontSize : size ? size : 24,
-                verticalAlign: 'middle',
-                color : color ? color : '#757575'},
-                style);
-  return (
-    <i className={_classes} style={_style}>{icon}</i>
-  )
-}
 
-UI.Table = ({data, classes}) => (
-  <table className={`table ${classes}`}>
-    <thead> 
-      <tr> 
-        {Object.keys(data[0]).map((key,i) => {
-          return <th key={'row-'+key+'-'+i}>{key}</th>
-        })} 
-      </tr> 
-    </thead>
-    <tbody> 
-      {data.map((row,j) => {
-        return <tr key={'r-'+j}>
-          {Object.keys(row).map((column,k) => {
-            return <td key={'col-'+column+'-'+k}>{row[column]}</td>
-          })}
-        </tr>
-      })}
-    </tbody>  
-  </table>
-)
+
 
 
 UI.IStack = ({icon, size, color, bg, width, height, classes}) => {
