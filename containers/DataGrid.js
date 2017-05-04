@@ -13,9 +13,11 @@ import { connect } from 'react-redux';
 
 import LocalReduxOutlet from '../outlets/LocalReduxOutlet';
 
-import DataTable from '../components/data/DataTable';
-import {Panel} from '../components/ui/';
-import {Row, Col, Page} from '../components/ui/Layout';
+import DataTable from '../components/icarros/data_table/DataTable';
+import Panel from '../components/icarros/panel/Panel';
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
 
 const dataSchema = {
   name : 'messages',

@@ -25,8 +25,12 @@ import EasyPie from '../components/charts/EasyPie';
 import ProgressBar from '../components/charts/ProgressBar';
 import PieChart from '../components/charts/PieChart';
 
-import {Panel} from '../components/ui/';
-import {Row, Col, Page} from '../components/ui/Layout';
+import Panel from '../components/icarros/panel/Panel';
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
+
+
 var shallowCompare = require('react-addons-shallow-compare');
 
 

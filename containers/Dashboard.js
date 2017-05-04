@@ -26,7 +26,7 @@ import EasyPie from '../components/charts/EasyPie';
 import ProgressBar from '../components/charts/ProgressBar';
 
 
-import {I} from '../components/ui/';
+import I from '../components/icarros/i/I';
 import Slider from 'rc-slider';
 import Row from '../components/icarros/row/Row';
 import Page from '../components/icarros/page/Page';

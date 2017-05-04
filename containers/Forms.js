@@ -13,11 +13,13 @@ import { Link, browserHistory } from 'react-router';
 
 import moment from 'moment';
 
-import {Button, Panel} from '../components/ui';
-import {Row, Col, Page} from '../components/ui/Layout';
+import Button from '../components/icarros/button/Button';
+import Panel from '../components/icarros/panel/Panel';
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
 
-
-import Input from '../components/ui/Input';
+import Input from '../components/icarros/input/Input';
 
 import DraftEditor from '../components/ui/DraftEditor';
 
@@ -59,8 +61,8 @@ class Forms extends Component {
                   <label>Password</label>
                   <Input placeholder="password" errorMessage="required" format="password" />
                 </div>
-                <div className="checkbox"> 
-                  <label> <input type="checkbox" /> Remember me </label> 
+                <div className="checkbox">
+                  <label> <input type="checkbox" /> Remember me </label>
                 </div>
                 <Button label="login" color="btn-info" />
               </form>
@@ -78,8 +80,8 @@ class Forms extends Component {
                   <Input classes={'col-lg-10'} placeholder="password" errorMessage="required" format="password" onFieldChange={()=>{}} />
                 </div>
                 <div className="form-group">
-                  <div className="checkbox col-lg-offset-2 col-lg-10"> 
-                    <label> <input type="checkbox" /> Remember me </label> 
+                  <div className="checkbox col-lg-offset-2 col-lg-10">
+                    <label> <input type="checkbox" /> Remember me </label>
                   </div>
                 </div>
                 <div className="form-group">
@@ -103,8 +105,8 @@ class Forms extends Component {
                   <label>Password</label>
                   <Input icon="fa fa-key" placeholder="password" errorMessage="required" format="password" />
                 </div>
-                <div className="checkbox"> 
-                  <label> <input type="checkbox" /> Remember me </label> 
+                <div className="checkbox">
+                  <label> <input type="checkbox" /> Remember me </label>
                 </div>
                 <Button label="login" color="btn-success" />
               </form>
@@ -121,8 +123,8 @@ class Forms extends Component {
                   <label>Password</label>
                   <Input icon="fa fa-key" required={true} placeholder="password" errorMessage="password is required" format="password" />
                 </div>
-                <div className="checkbox"> 
-                  <label> <input type="checkbox" /> Remember me </label> 
+                <div className="checkbox">
+                  <label> <input type="checkbox" /> Remember me </label>
                 </div>
                 <Button label="login" color="btn-warning" />
               </form>
@@ -139,8 +141,8 @@ class Forms extends Component {
                 <div className="form-group m-r-sm">
                   <Input icon="fa fa-key" placeholder="password" errorMessage="required" format="password" />
                 </div>
-                <div className="checkbox m-r-sm"> 
-                  <label> <input type="checkbox" /> Remember me </label> 
+                <div className="checkbox m-r-sm">
+                  <label> <input type="checkbox" /> Remember me </label>
                 </div>
                 <Button label="login" color="btn-dark" />
               </form>

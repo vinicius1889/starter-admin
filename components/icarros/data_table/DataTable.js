@@ -10,7 +10,7 @@
 
 import React, {Component} from 'react';
 import DataRow from './Row';
-import {Pager} from '../../components/ui/';
+import Pager from '../pager/Pager';
 
 export default class DataTable extends Component {
     

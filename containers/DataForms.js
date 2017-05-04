@@ -11,7 +11,9 @@
 import React, { Component } from 'react';
 
 import Form from '../components/dataEditor/Form';
-import {Row, Col, Page} from '../components/ui/Layout';
+import Row from '../components/icarros/row/Row';
+import Col from '../components/icarros/col/Col';
+import Page from '../components/icarros/page/Page';
 
 const rowschema = {
   name : 'messages',

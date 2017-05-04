@@ -10,16 +10,23 @@
 
  import React, { Component } from 'react';
 
-import Input from '../components/ui/Input';
-import DropDownButton from '../components/ui/DropDownButton';
-import Badge from '../components/badges/badge';
-import Switch from '../components/ui/Switch';
 import Timezonecontrol from '../components/ui/timezonecontrol';
-import moment from 'moment';
 
-import {Fa, I, Pager, SearchBox ,IStack, Panel} from '../components/ui/';
 
-import {Row, Col, Page} from '../components/ui/Layout';
+import  Input from '../components/icarros/input/Input';
+import  DropDownButton from '../components/ui/DropDownButton';
+import  Badge    from '../components/icarros/badge/Badge';
+import  Switch   from '../components/icarros/switch/Switch';
+import  moment from 'moment';
+import  SearchBox from '../components/icarros/search_box/SearchBox';
+import  Pager from '../components/icarros/pager/Pager';
+import  IStack from '../components/icarros/istack/IStack';
+import  Panel from '../components/icarros/panel/Panel';
+import  I from '../components/icarros/i/I';
+import  Fa from '../components/icarros/fa/Fa';
+import  Page from '../components/icarros/page/Page';
+import  Col from '../components/icarros/col/Col';
+import  Row from '../components/icarros/row/Row';
 
 var shallowCompare = require('react-addons-shallow-compare');
 
@@ -27,7 +34,7 @@ class Components extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     return shallowCompare(this, nextProps, nextState);
   }
-  
+
   render() {
     return (
       <Page height={1000}>
@@ -79,7 +86,7 @@ class Components extends Component {
             <Timezonecontrol />
           </Comp>
 
-          <Comp>  
+          <Comp>
             <div className="pull-left m-r-sm p-t-sm">
               <IStack icon="mail" width={36} height={36} color="#ffffff" size={24} bg="#a88add" />
             </div>
@@ -106,44 +113,44 @@ class Components extends Component {
           </Comp>
 
           <Comp title="Users" style={{textAlign:'left'}}>
-            <article className="comment-item"> 
-              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/5.png" className="img-circle" /></a> 
-              <section className="comment-body"> 
-                <header> <a href="#"><strong>Andrew Wilson</strong></a></header> 
-                <div className="text-muted">UI / UX Developer</div> 
-              </section> 
+            <article className="comment-item">
+              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/5.png" className="img-circle" /></a>
+              <section className="comment-body">
+                <header> <a href="#"><strong>Andrew Wilson</strong></a></header>
+                <div className="text-muted">UI / UX Developer</div>
+              </section>
             </article>
 
-            <article className="comment-item"> 
-              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/7.png" className="img-circle" /></a> 
-              <section className="comment-body"> 
-                <header> <a href="#"><strong>Noah Wilson</strong></a></header> 
-                <div className="text-muted">UI / UX Developer</div> 
-              </section> 
+            <article className="comment-item">
+              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/7.png" className="img-circle" /></a>
+              <section className="comment-body">
+                <header> <a href="#"><strong>Noah Wilson</strong></a></header>
+                <div className="text-muted">UI / UX Developer</div>
+              </section>
             </article>
 
-            <article className="comment-item"> 
-              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/8.png" className="img-circle" /></a> 
-              <section className="comment-body"> 
-                <header> <a href="#"><strong>Heather Smith</strong></a></header> 
-                <div className="text-muted">UI / UX Developer</div> 
-              </section> 
+            <article className="comment-item">
+              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/8.png" className="img-circle" /></a>
+              <section className="comment-body">
+                <header> <a href="#"><strong>Heather Smith</strong></a></header>
+                <div className="text-muted">UI / UX Developer</div>
+              </section>
             </article>
 
-            <article className="comment-item"> 
-              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/img3.jpg" className="img-circle" /></a> 
-              <section className="comment-body"> 
-                <header> <a href="#"><strong>Erin Vieira</strong></a></header> 
-                <div className="text-muted">UI / UX Developer</div> 
-              </section> 
+            <article className="comment-item">
+              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/img3.jpg" className="img-circle" /></a>
+              <section className="comment-body">
+                <header> <a href="#"><strong>Erin Vieira</strong></a></header>
+                <div className="text-muted">UI / UX Developer</div>
+              </section>
             </article>
 
-            <article className="comment-item"> 
-              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/avatar.png" className="img-circle" /></a> 
-              <section className="comment-body"> 
-                <header> <a href="#"><strong>Mia Vieira</strong></a></header> 
-                <div className="text-muted">UI / UX Developer</div> 
-              </section> 
+            <article className="comment-item">
+              <a className="pull-left thumb-sm m-r-sm"><img src="/dist/images/avatar.png" className="img-circle" /></a>
+              <section className="comment-body">
+                <header> <a href="#"><strong>Mia Vieira</strong></a></header>
+                <div className="text-muted">UI / UX Developer</div>
+              </section>
             </article>
           </Comp>
 
@@ -188,6 +195,8 @@ class Components extends Component {
               </div>
             </div>
           </Comp>
+
+
         </Row>
 			</Page>
   	);
