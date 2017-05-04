@@ -15,7 +15,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.css'],
-    alias: { 'react/lib/ReactMount': 'react-dom/lib/ReactMount' }
+    alias: { 'react/lib/ReactMount': 'react-dom/lib/ReactMount'}
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

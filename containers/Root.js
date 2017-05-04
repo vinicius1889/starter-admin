@@ -16,7 +16,7 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 import configureStore from '../store/configureStore';
 
 
-import Dashboard from './Dashboard';
+import Dashboard from './pages/Dashboard';
 
 import App from './App';
 

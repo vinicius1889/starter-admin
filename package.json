@@ -56,8 +56,11 @@
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-less": "^1.2.0",
     "grunt-contrib-watch": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
     "react-hot-loader": "^1.2.7",
     "s3-upload": "^0.1.0",
+    "stream-replace": "^1.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0"
