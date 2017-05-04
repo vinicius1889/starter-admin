@@ -17,7 +17,7 @@ export default class DataTable extends Component {
   headers() {
     const {schema} = this.props;
     return Object.keys(schema.fields).reverse().map((key,i) => {
-      return <th key={'header-key-'+key + '-' + i} key={key}>{key}</th>; 
+      return <th>{key}</th>;
     })
   }
 

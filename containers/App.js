@@ -11,10 +11,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import Landing from './Landing';
 import Header from './Header';
 import Menu from './Menu';
-import Signup from './Signup';
 
 import { fetchMe, auth, signup, logout, isAuthenticated } from '../actions';
 
