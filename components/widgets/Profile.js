@@ -24,17 +24,17 @@ export default class Profile extends Component {
         <ul className="dropdown-menu animated fadeInRight">
           <span className="arrow top"></span>
           <li>
-            <Link to="/profile">Profile</Link>
+            <Link to="/perfil">Perfil</Link>
           </li>
           <li>
-            <Link to="/account">Account</Link>
+            <Link to="/conta">Minha Conta</Link>
           </li>
           <li>
-            <Link to="/settings">Settings</Link>
+            <Link to="/configuracao">Configurações</Link>
           </li>
           <li className="divider"></li>
           <li>
-            <Link to="/landing">Logout</Link>
+            <Link to="/landing">Sair</Link>
           </li>
         </ul>
       </li>

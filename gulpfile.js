@@ -6,7 +6,7 @@ var replace = require("stream-replace");
 
 gulp.task("novaPagina", function(){
     const ROOT_DESTINO = "./containers/pages/";
-    const ORIGEM  = "./dev/page/Template.js";
+    const ORIGEM  = "./dev/page/Template.txt";
     var nome =  util.env.nome;
     fs.createReadStream( ORIGEM )
         .pipe(replace(/NOME/g,nome))

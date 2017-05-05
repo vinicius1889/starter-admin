@@ -22,7 +22,7 @@ export default class NOME extends Component{
             <Page>
                 <Row>
                     <Col size={12}>
-                        >>>NOME<<<
+                       NOME
                     </Col>
                 </Row>
             </Page>);
